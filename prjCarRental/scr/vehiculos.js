@@ -35,15 +35,12 @@ function mostrarTodo() {
 
     var lista = vehiculos[tipoSeleccionado];
 
-    document.getElementById("img1").src = "images/" + lista[0].img;
-    document.getElementById("img2").src = "images/" + lista[1].img;
-    document.getElementById("img3").src = "images/" + lista[2].img;
-    document.getElementById("imgVista").src =
-        "images/" + lista[0].img;
+    document.getElementById("img1").src = "prjCarRental/images/" + lista[0].img;
+    document.getElementById("img2").src = "prjCarRental/images/" + lista[1].img;
+    document.getElementById("img3").src = "prjCarRental/images/" + lista[2].img;
+    document.getElementById("imgVista").src = "prjCarRental/images/" + lista[0].img;
 
-
-    document.getElementById("infTCar").innerHTML =
-        lista[0].desc;
+    document.getElementById("infTCar").innerHTML = lista[0].desc;
 }
 
 function mostrarImagen(num) {
@@ -55,9 +52,6 @@ function mostrarImagen(num) {
 
     var indice = num - 1;
 
-    document.getElementById("imgVista").src =
-        "images/" + lista[indice].img;
-
-    document.getElementById("infTCar").innerHTML =
-        lista[indice].desc;
+    document.getElementById("imgVista").src = "prjCarRental/images/" + lista[indice].img;
+    document.getElementById("infTCar").innerHTML = lista[indice].desc;
 }
